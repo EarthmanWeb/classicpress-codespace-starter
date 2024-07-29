@@ -1,0 +1,72 @@
+.rael-hf__display-condition-container  .select2-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100% !important;
+}
+
+.rael-hf__display-condition-container .select2-container--default.select2-container--focus .select2-selection--multiple,
+.rael-hf__display-condition-container .select2-container--default .select2-selection--multiple {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.rael-hf__display-condition-container .select2-container .select2-search--inline,
+.rael-hf__display-condition-container .select2-container--default .select2-search--inline .select2-search__field {
+    width: 100% !important;
+}
+
+.rael-hf__display-condition,
+.rael-hf__user-role-condition {
+    position: relative;
+    margin-top: 10px;
+}
+
+.rael-hf__display-condition-specific-page-wrapper {
+    position: relative;
+    padding: 0 30px 0 0;
+}
+
+.rael-hf__add-include-display-condition-wrapper,
+.rael-hf__add-exclude-display-condition-wrapper,
+.rael-hf__user-add-role-condition-wrapper {
+    margin-top: 15px;
+}
+
+.rael-hf__display-condition-display-on,
+.rael-hf__display-condition-exclude-on {
+    margin-bottom: 10px;
+}
+
+.rael-hf__display-condition-delete,
+.rael-hf__user-role-condition-delete {
+    position: absolute;
+    color: #999;
+    right: 0px;
+    top: 0px;
+    font-size: 18px;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rael-hf__display-condition-delete:hover {
+    color: #d54e21;
+}
+
+.rael-hf__add-include-display-condition-wrapper {
+    display: inline-block;
+}
+
+.rael-hf__add-exclude-display-condition-wrapper {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.rael-hf__element-hidden {
+    display: none !important;
+}

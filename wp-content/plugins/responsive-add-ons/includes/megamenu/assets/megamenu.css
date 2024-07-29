@@ -1,0 +1,15 @@
+@media (min-width: 767px) {
+    .responsive-megamenu-hl-depth-zero {
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 2px;
+    }
+
+    .responsive-megamenu-hl-depth-non-zero {
+        font-size: 12px;
+        padding: 3px 6px;
+        border-radius: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

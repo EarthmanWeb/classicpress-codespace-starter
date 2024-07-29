@@ -1,0 +1,218 @@
+
+/* Overrides the default WordPress colors */
+:root {
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color--rgb: 0,124,186;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-10--rgb: 0,107,161;
+    --wp-admin-theme-color-darker-20: #005a87;
+    --wp-admin-theme-color-darker-20--rgb: 0,90,135;
+    --wp-admin-border-width-focus: 2px;
+    --wp-block-synced-color: #7a00df;
+    --wp-block-synced-color--rgb: 122,0,223;
+}
+
+/* Mega Menu */
+/* The Modal (background) */
+.resp-pro-megamenu-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 9999; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+  
+/* Modal Content/Box */
+.resp-pro-megamenu-modal-content {
+	/* fill: #FFF; */
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.30));
+	background-color: #fefefe;
+	margin: 10% auto; /* 10% from the top and centered */
+	margin: 5% auto;
+	padding: 20px;
+	padding-top: 23px;
+	padding-left: 35px;
+	padding-right: 30px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	max-width: 1000px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  	-webkit-animation-name: animatetop;
+  	-webkit-animation-duration: 0.4s;
+  	animation-name: animatetop;
+  	animation-duration: 0.4s
+}
+
+.resp-pro-megamenu-modal-header {
+	background-color: #E9F5FF;
+}
+  
+/* The Close Button */
+.resp-pro-megamenu-modal-close {
+	margin-top: 18px;
+	margin-right: 10px;
+	color: #000;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+}
+  
+.resp-pro-megamenu-modal-close:hover,
+.resp-pro-megamenu-modal-close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+.resp-pro-megamenu-modal-header .megamenu-header-heading {
+	font-size: 16px;
+	font-weight: 700;
+	color: #374151;
+}
+
+.resp-pro-megamenu-modal-header .megamenu-header-desc {
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 0;
+	color: #374151;
+}
+
+.resp-pro-megamenu-modal-header .heading-items-wrapper {
+	display: flex;
+}
+
+.resp-pro-megamenu-modal-header .heading-item-megamenu-settings {
+	width: 30%;
+	padding: 10px;
+}
+
+.resp-pro-megamenu-modal-header .heading-item-megamenu-general-settings, .resp-pro-megamenu-modal-header .heading-item-megamenu-design-settings {
+	width: 20%;
+	text-align: center;
+}
+
+.resp-pro-megamenu-modal-header .no-margin-top {
+	margin-top: 0;
+}
+
+.resp-pro-megamenu-modal-header .no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.resp-pro-megamenu-modal-header .active-settings-tab {
+	background-color: #FFF;
+}
+
+.resp-pro-megamenu-modal-body {
+	height: 320px;
+    overflow: auto;
+}
+
+.resp-pro-megamenu-modal-footer {
+	display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.resp-pro-megamenu-modal-footer button {
+	padding: 10px 14px !important;
+	line-height: unset !important;
+	font-size: 16px !important;
+}
+
+.resp-pro-megamenu-modal-body #resp-megamenu-design-tab-section {
+	display: none;
+}
+
+.pointer-cursor {
+	cursor: pointer;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-setting-heading {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-setting-subheading {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: #6F6685;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-setting-heading-with-control {
+	width: 30%;
+}
+
+.resp-pro-megamenu-heading-margin {
+	margin-right: 10%;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-depth-0 {
+	padding: 10px;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-setting-general {
+	display: flex;
+	margin-right: 10%;
+}
+
+.resp-pro-megamenu-modal-body .align-items-flex-start {
+	align-items: flex-start;
+}
+
+.resp-pro-megamenu-modal-body .align-items-baseline {
+	align-items: baseline;
+}
+
+.resp-pro-megamenu-modal-body .align-items-center {
+	align-items: center;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-setting-margin-top {
+	margin-top: 20px;
+}
+
+.resp-pro-megamenu-modal-body .resp-pro-megamenu-hr {
+	border-color: #F3F4F6;
+	margin-top: 20px;
+}
+
+.resp-pro-megamenu-modal-body .position-inherit {
+	position: inherit;
+}
+
+.resp-pro-megamenu-modal-body .display-block {
+	display: block;
+}
+
+/* Components CSS */
+.resp-pro-megamenu-modal-body .components-range-control__wrapper input.components-range-control__slider {
+	position: inherit;
+}
+
+.resp-pro-megamenu-modal-body .components-circular-option-picker .components-circular-option-picker__custom-clear-wrapper {
+	display: block;
+}
+
+.resp-pro-megamenu-modal-body .components-button-group .is-pressed, .resp-pro-megamenu-modal-body .components-button-group .is-pressed:hover:not(:disabled) {
+	background-color: var(--wp-admin-theme-color);
+}

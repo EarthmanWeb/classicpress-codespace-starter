@@ -1,0 +1,639 @@
+@import url('../assets/lib/bootstrap/css/bootstrap.min.css');
+@import url('../assets/lib/toastify/css/toastify.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Montserrat:wght@600&display=swap');
+
+* {
+	font-family: 'Libre Franklin', sans-serif;
+	font-style: normal;
+}
+
+body.toplevel_page_rael_getting_started #wpcontent {
+	padding-left: 0;
+	background: #F0F0F1;
+}
+
+body.toplevel_page_rael_getting_started #wpfooter {
+	display: none;
+}
+
+.responsive-addons-for-elementor-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 40px;
+	gap: 16px;
+	height: 125px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #E5E7EB;
+}
+
+.responsive-addons-for-elementor-brand {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 20px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-logo {
+	width: 30px;
+	height: 30px;
+	margin-right: -10px;
+}
+
+.responsive-addons-for-elementor-brand-name {
+	display: contents;
+	font-family: 'Montserrat', sans-serif;;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #1F2937;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-version {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 8px;
+	gap: 8px;
+	width: 41px;
+	height: 24px;
+	background: #E5E7EB;
+	border-radius: 2px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #4B5563;
+}
+
+.responsive-addons-for-elementor-brand-desc {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #4B5563;
+	text-transform: capitalize;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-tabs-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 40px 40px 0px;
+	gap: 8px;
+	height: 93px;
+}
+
+.responsive-addons-for-elementor-tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 10px;
+	height: 53px;
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-tab {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 16px 40px;
+	gap: 8px;
+	height: 53px;
+	background: #F3F4F6;
+	border: 1px solid #E5E7EB;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	cursor: pointer;
+}
+
+.responsive-addons-for-elementor-active-tab {
+	background: #FFFFFF;
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+	border-color: #E5E7EB;
+}
+
+.responsive-addons-for-elementor-active-tab p {
+	color: #111827;
+}
+
+.responsive-addons-for-elementor-tab-name {
+	height: 21px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+	color: #6B7280;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-tabs-content {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px 40px;
+	gap: 8px;
+}
+
+.responsive-addons-for-elementor-tabs-inner-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 300px;
+	gap: 40px;
+	background: #FFFFFF;
+	order: 0;
+	flex-grow: 1;
+}
+
+.responsive-addons-for-elementor-tab-content {
+	display: none;
+}
+
+.responsive-addons-for-elementor-mobile-line-break {
+	display: none;
+}
+
+.responsive-addons-for-elementor-star-rating {
+	vertical-align: text-bottom;
+	text-decoration: none;
+}
+
+.responsive-addons-for-elementor-hr {
+	width: 200px;
+	height: 0px;
+	border: 1px solid #E5E7EB;
+	margin: 0 auto;
+}
+
+.responsive-addons-for-elementor-cyberchimps-logo {
+	width: 119px;
+	height: 35px;
+}
+.responsive-addons-for-elementor-flex-display{
+display: flex;
+gap: 8px;
+align-items: center;
+color: lightgray;
+}
+.responsive-addons-for-elementor-tab-button{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+}
+.responsive-addons-for-elementor-margin-zero{
+	margin: 0;
+	font-size: 16px;
+	cursor: default;
+}
+.responsive-elementor-settings-active-tab {
+	color: #2271B1;
+}
+.active-key::placeholder {
+	color: #85C485 !important;
+}
+.responsive-addons-for-elementor-activate-error-border{
+	border: 1px solid red !important;
+	margin-bottom: 0;
+}
+.responsive-addons-for-elementor-rst {
+	padding: 40px 60px;
+	height: 360px;
+	background: #FFFFFF;
+	border: 1px solid #E5E7EB;
+	box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+}
+
+.responsive-addons-for-elementor-rst-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+}
+
+.responsive-addons-for-elementor-rst-content .responsive-addons-for-elementor-logo {
+	width: 47px;
+	height: 41px;
+	margin-right: 0;
+}
+
+.responsive-addons-for-elementor-rst-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 14px;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-rst-name {
+	height: 32px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #4B5563;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-rst-desc {
+	height: 48px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #6B7280;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-rst-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 16px;
+	width: 163px;
+	height: 76px;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+
+.responsive-addons-for-elementor-rst-buttons .button.updating-message:before {
+	margin: 1px 5px 0 -2px;
+	color: #FFFFFF;
+}
+
+.responsive-addons-for-elementor-rst-button {
+	padding: 10px 20px !important;
+	background: #2271B1 !important;
+	border: none;
+	border-radius: 4px !important;
+	font-weight: 600;
+	font-size: 16px !important;
+	line-height: 21px !important;
+	color: #FFFFFF !important;
+}
+
+.responsive-addons-for-elementor-rst-button:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.responsive-addons-for-elementor-rst-button-disabled {
+	padding: 10px 20px;
+	background: #EBEBEB;
+	border: none;
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+	color: #C1C1C1;
+}
+
+.responsive-addons-for-elementor-rst-learn-more {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-decoration-line: underline;
+	color: #2271B1;
+}
+
+.responsive-addons-for-elementor-widgets-section-spacing {
+	align-items: initial;
+	padding: 50px 40px;
+}
+
+.rael-widget-category, .rael-active-widget-category {
+	color: #4B5563;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.pointer:hover {
+	cursor: pointer;
+}
+
+.rael-active-widget-category {
+	color: #2271B1;
+	text-decoration-line: underline;
+}
+
+.rael-widget-search-box {
+	position: relative;
+	display: inline-block;
+	top: -8px;
+}
+
+.rael-widget-search-box input {
+	border: none;
+	border-bottom: 2px solid #E5E7EB;
+	outline: none;
+	width: 200px;
+	border-radius: 0;
+}
+
+.rael-widget-search-box input, .rael-widget-search-box input::placeholder {
+	color: #9CA3AF;
+}
+
+.rael-widget-search-box input:focus {
+	box-shadow: none;
+}
+
+.rael-widget-search-box .rael-widget-search-icon {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.rael-widget-search-box .dashicons.dashicons-search {
+	color: #2271B1;
+}
+
+.rael-widget-toogle-widget-title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #4B5563;
+}
+
+.rael-widget-toogle-widget-desc {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 17px;
+	color: #4B5563;
+}
+
+.rael-widgets-switch {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 20px;
+}
+
+.rael-widgets-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.rael-widgets-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+}
+
+.rael-widgets-slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	transition: .4s;
+}
+
+input:checked + .rael-widgets-slider {
+	background-color: #2271B1;
+}
+
+input:focus + .rael-widgets-slider {
+	box-shadow: 0 0 1px #2271B1;
+}
+
+input:checked + .rael-widgets-slider:before {
+	transform: translateX(16px);
+}
+
+.rael-widgets-slider.rael-widgets-round {
+	border-radius: 10px;
+}
+
+.rael-widgets-slider.rael-widgets-round:before {
+	border-radius: 50%;
+}
+
+.rael-widgets-card {
+	padding: 16px 18px;
+	background: #FFFFFF;
+	border: 1px solid #F3F4F6;
+	box-shadow: 0px 4px 15px -1px rgba(0, 0, 0, 0.08), 0px 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.rael-widgets-card-title {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	color: #4B5563;
+	text-transform: capitalize;
+}
+
+.rael-widgets-card-docs {
+	margin-top: -10px;
+}
+
+.rael-widgets-card-docs a {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 17px;
+	text-decoration-line: underline;
+	color: #2271B1;
+}
+
+@media (max-width: 768px) {
+	.responsive-addons-for-elementor-tabs-section {
+		padding: 20px 10px 0;
+		height: auto;
+	}
+
+	.responsive-addons-for-elementor-tabs {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 10px;
+		height: auto;
+	}
+
+	.responsive-addons-for-elementor-tab {
+		width: auto;
+		flex-grow: 1;
+		max-width: 200px;
+		padding: 10px 20px;
+		height: 40px;
+	}
+
+	.responsive-addons-for-elementor-tab-name {
+		width: auto;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.responsive-addons-for-elementor-header {
+		padding: 20px;
+		height: auto;
+	}
+
+	.responsive-addons-for-elementor-brand {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.responsive-addons-for-elementor-brand .responsive-addons-for-elementor-logo {
+		margin: inherit;
+	}
+
+	.responsive-addons-for-elementor-brand-name {
+		font-size: 18px;
+	}
+
+	.responsive-addons-for-elementor-version {
+		width: auto;
+		height: auto;
+		padding: 4px;
+		font-size: 10px;
+	}
+
+	.responsive-addons-for-elementor-brand-desc {
+		font-size: 12px;
+	}
+
+	.responsive-addons-for-elementor-tab {
+		height: 40px;
+	}
+
+	.responsive-addons-for-elementor-tab-name {
+		font-size: 12px;
+	}
+
+	.responsive-addons-for-elementor-tabs-content {
+		padding: 0 10px;
+		height: auto;
+	}
+
+	.responsive-addons-for-elementor-tabs-inner-content {
+		padding: 30px 20px;
+		gap: 20px;
+		width: 100%;
+	}
+
+	.responsive-addons-for-elementor-mobile-line-break {
+		display: block;
+	}
+
+	.responsive-addons-for-elementor-star-rating {
+		vertical-align: baseline;
+	}
+
+	.responsive-addons-for-elementor-star-rating img {
+		width: 14px;
+		height: 14px;
+	}
+
+	.responsive-addons-for-elementor-cyberchimps-logo {
+		width: 100px;
+		height: auto;
+	}
+
+	.elementor-button-spinner:before {
+		top: 15px !important;
+	}
+
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+	.responsive-addons-for-elementor-header {
+		padding: 20px 40px;
+	}
+
+	.responsive-addons-for-elementor-brand {
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 20px;
+		align-items: center;
+	}
+
+	.responsive-addons-for-elementor-brand-name {
+		font-size: 20px;
+	}
+
+	.responsive-addons-for-elementor-version {
+		font-size: 12px;
+	}
+
+	.responsive-addons-for-elementor-brand-desc {
+		font-size: 14px;
+	}
+
+	.responsive-addons-for-elementor-tabs-section {
+		padding: 40px 40px 0;
+		height: auto;
+	}
+
+	.responsive-addons-for-elementor-tab {
+		padding: 16px 40px;
+		height: 53px;
+	}
+
+	.responsive-addons-for-elementor-tab-name {
+		font-size: 16px;
+	}
+
+	.responsive-addons-for-elementor-tabs-content {
+		padding: 0px 40px;
+	}
+
+	.responsive-addons-for-elementor-tabs-inner-content {
+		padding: 50px;
+		gap: 40px;
+	}
+
+	.responsive-addons-for-elementor-cyberchimps-logo {
+		width: 119px;
+		height: 35px;
+	}
+
+}

@@ -1,0 +1,124 @@
+{
+  "terminal.integrated.scrollback": 10000,
+  "explorer.confirmDelete": false,
+  "yaml.schemas": {
+    "file:///home/vscode/.vscode-remote/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "php.validate.executablePath1": "/usr/local/bin/php",
+  "git.autofetch": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[scss]": {
+    "editor.defaultFormatter": "MikeBovenlander.formate"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "phpcs.executablePath": "",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "CodeGPT.maxTokens": 4097,
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "prettier.singleAttributePerLine": true,
+  "editor.language.colorizedBracketPairs": [],
+  "editor.maxTokenizationLineLength": 500000,
+  "atlascode.jira.lastCreateSiteAndProject": {
+    "siteId": "",
+    "projectKey": ""
+  },
+  "window.zoomLevel": -1,
+  "editor.accessibilitySupport": "off",
+  "accessibility.verbosity.terminal": false,
+  "accessibility.verbosity.diff-editor": false,
+  "editor.inlineSuggest.enabled": true,
+  "settingsSync.ignoredExtensions": ["github.copilot"],
+  "github.codespaces.createCodespaceInNewWindow": true,
+  "github.codespaces.showPerformanceExplorer": true,
+  "files.autoSave": "off",
+  "phpsab.fixerArguments": [],
+  "files.associations": {
+    "*.module": "php",
+    "*.inc": "php"
+  },
+  "files.exclude": {
+    "**/.php_cs.cache": true
+  },
+  "git.ignoreLimitWarning": true,
+  "gitlens.advanced.blame.delayAfterEdit": 0,
+  "git.detectSubmodulesLimit": 100,
+  "editor.formatOnSave": true,
+  "[php]": {
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[twig]": {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true,
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.tabSize": 3,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true
+  },
+  "[vue,js,esm.js]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true
+  },
+  "twig-language-2.forceIndent": true,
+  "phpsab.debug": true,
+  "phpsab.snifferShowSources": true,
+  "phpsab.fixerEnable": true,
+  "phpsab.snifferEnable": true,
+  "phpsab.snifferMode": "onSave",
+  "phpsab.standard": "MySource",
+  "editor.codeActionsOnSave": {},
+  "explorer.excludeGitIgnore": false,
+  "search.exclude": {
+    "**/._*": true
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "generateMap": true,
+      "savePath": "/wp-content/themes/bootscore-child-main/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/**/bootscore-main/**",
+    "/**/bootstrap/**",
+    "/**/plugins/**"
+  ],
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+  "php.debug.executablePath": "/usr/local/bin/php",
+  "php.validate.executablePath": "/usr/local/bin/php"
+}

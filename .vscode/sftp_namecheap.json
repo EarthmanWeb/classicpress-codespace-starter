@@ -1,0 +1,36 @@
+[
+  {
+    "name": "WP Namecheap",
+    "host": "domain.ca",
+    "protocol": "sftp",
+    "port": 21098,
+    "username": "namecheap_dashboard_username",
+    "remotePath": "/home/namecheap_dashboard_username/public_html",
+    "privateKeyPath": "/home/vscode/.ssh/id_rsa",
+    "uploadOnSave": true,
+    "autoDelete": true,
+    "useTempFile": false,
+    "openSsh": false,
+    "ignore": [
+      "wp-includes",
+      "wp-admin",
+      ".ddev",
+      ".devcontainer",
+      ".pantheon",
+      "node_modules",
+      ".wpcs",
+      ".vscode",
+      "wp-content/uploads",
+      "wp-content/upgrade",
+      "wp-content/themes/twenty*",
+      ".gitignore",
+      ".php-cs-fixer.php"
+    ],
+    "watcher": {
+      "files": "wp-content/themes/**/*.*",
+      "uploadOnSave": true,
+      "autoUpload": true,
+      "autoDelete": true
+    }
+  }
+]

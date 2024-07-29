@@ -1,0 +1,97 @@
+<?php
+/**
+ * Plugin Name: ~ MU Plugin Loader
+ * Description: Loads the MU plugins required to run the site
+ */
+
+if ( defined( 'WP_INSTALLING' ) && WP_INSTALLING ) {
+	return;
+}
+
+// change this to disable non essentials
+// define( 'MU_PLUGIN_DISABLE', true );
+define( 'MU_PLUGIN_DISABLE', false );
+
+function is_cli() {
+	return defined( 'WP_CLI' ) && WP_CLI;
+}
+
+if ( is_cli() ) {
+	require_once WPMU_PLUGIN_DIR . '/cli/cp_updates.cli.php';
+}
+
+// required always
+require_once WPMU_PLUGIN_DIR . '/utils/em_utils.php';
+
+if ( MU_PLUGIN_DISABLE ) {
+	// load only the essentials
+	// require_once WPMU_PLUGIN_DIR . '/utils/sample.php';
+}
+
+// Load custom mu plugins in order
+$my_mu_plugins = array(
+	'/admin/login-logo.php',
+	'/admin/disable-comments.php',
+	'/admin/menubar-mods.php',
+);
+
+if ( MU_PLUGIN_DISABLE !== true ) {
+	foreach ( $my_mu_plugins as $file ) {
+		include_once WPMU_PLUGIN_DIR . $file;
+	}
+} else {
+	if ( is_admin() ) {
+		em_log( 'MU_PLUGINS ARE DISABLED', 'See: /wp-content/mu-plugins/loader.php', 1 );
+	}
+}
+unset( $file );
+
+add_action(
+	'pre_current_active_plugins',
+	function () use ( $my_mu_plugins ) {
+		global $plugins, $wp_list_table;
+
+		// Add our own mu-plugins to the page.
+		foreach ( $my_mu_plugins as $plugin_file ) {
+			// Do not apply markup/translate as it'll be cached.
+			$plugin_data = get_plugin_data( WPMU_PLUGIN_DIR . "/$plugin_file", false, false );
+
+			if ( empty( $plugin_data['Name'] ) ) {
+				$plugin_data['Name'] = $plugin_file;
+			}
+
+			$plugins['mustuse'][ $plugin_file ] = $plugin_data;
+		}
+
+		// Recount totals.
+		$GLOBALS['totals']['mustuse'] = count( $plugins['mustuse'] );
+
+		// Only apply the rest if we're actually looking at the page.
+		if ( $GLOBALS['status'] !== 'mustuse' ) {
+			return;
+		}
+
+		// Reset the list table's data.
+		$wp_list_table->items = $plugins['mustuse'];
+		foreach ( $wp_list_table->items as $plugin_file => $plugin_data ) {
+			$wp_list_table->items[ $plugin_file ] = _get_plugin_data_markup_translate( $plugin_file, $plugin_data, false, true );
+		}
+
+		$total_this_page = $GLOBALS['totals']['mustuse'];
+
+		if ( $GLOBALS['orderby'] ) {
+			uasort( $wp_list_table->items, array( $wp_list_table, '_order_callback' ) );
+		}
+
+		// Force showing all plugins.
+		// See https://core.trac.wordpress.org/ticket/27110.
+		$plugins_per_page = $total_this_page;
+
+		$wp_list_table->set_pagination_args(
+			array(
+				'total_items' => $total_this_page,
+				'per_page'    => $plugins_per_page,
+			)
+		);
+	}
+);

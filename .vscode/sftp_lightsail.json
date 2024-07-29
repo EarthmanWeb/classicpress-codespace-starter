@@ -1,0 +1,36 @@
+[
+  {
+    "name": "WP Lightsail",
+    "host": "##.###.###.###",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "bitnami",
+    "remotePath": "/bitnami/wordpress",
+    "privateKeyPath": "/home/vscode/.ssh/id_rsa",
+    "uploadOnSave": true,
+    "autoDelete": true,
+    "useTempFile": false,
+    "openSsh": false,
+    "ignore": [
+      "wp-includes",
+      "wp-admin",
+      ".ddev",
+      ".devcontainer",
+      ".pantheon",
+      "node_modules",
+      ".wpcs",
+      ".vscode",
+      "wp-content/uploads",
+      "wp-content/upgrade",
+      "wp-content/themes/twenty*",
+      ".gitignore",
+      ".php-cs-fixer.php"
+    ],
+    "watcher": {
+      "files": "wp-content/themes/**/*.*",
+      "uploadOnSave": true,
+      "autoUpload": true,
+      "autoDelete": true
+    }
+  }
+]

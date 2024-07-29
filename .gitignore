@@ -1,0 +1,17 @@
+.vscode/sftp.json
+.wpcs/vendor
+.wpcs/*.lock
+package-lock.json
+node_modules
+vendor
+wordpress
+wp-content/plugins/index.php
+wp-content/themes/twentytwenty*
+wp-content/upgrade
+wp-content/uploads
+wp-content/languages
+logs/*.log
+!wp-content/**/vendor
+!wp-content/**/lib
+.bash_history
+mysql

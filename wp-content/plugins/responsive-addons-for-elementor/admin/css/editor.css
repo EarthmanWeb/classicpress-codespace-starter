@@ -1,0 +1,17 @@
+.rael-reset-design {
+	position: absolute;
+	left: -25px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.rael-reset-design:hover {
+	color: #562dd4;
+}
+
+.elementor-control-rael_design .elementor-control-input-wrapper
+{
+	position: relative;
+}

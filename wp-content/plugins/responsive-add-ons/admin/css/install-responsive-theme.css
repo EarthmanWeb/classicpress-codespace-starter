@@ -1,0 +1,846 @@
+@import url("https://fonts.googleapis.com/css?family=Libre Franklin&display=swap");
+
+.processing:before {
+    margin: 0 3px 0px 0px;
+}
+.processing:before {
+    animation: rotation 2s infinite linear;
+}
+.processing:before {
+    color: #f56e28;
+    content: "\f463";
+}
+.processing:before {
+    display: inline-block;
+    font: normal 20px/1 dashicons;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: top;
+}
+#responsive-theme-activation a {
+    box-shadow: none;
+    outline: none;
+}
+#responsive-theme-activation {
+    border-left-color: #2271b1;
+    padding: 20px;
+    box-shadow: 1px 4px 9px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 4px 9px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 9px -4px rgba(0,0,0,0.75);
+    background: rgb(203,218,245);
+    background: linear-gradient(90deg, rgba(228,238,255,1) 85px, rgba(255,255,255,1) 85px);
+}
+#responsive-theme-activation .responsive-addons-message-inner {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+#responsive-theme-activation .responsive-addons-message-icon {
+    font-size: 20px;
+}
+#responsive-theme-activation .responsive-addons-message-content {
+    padding: 0 20px;
+    margin-left: 10px;
+}
+#responsive-theme-activation .responsive-addons-message-content .responsive-addons-message-actions {
+    margin-top: 10px;
+}
+#responsive-theme-activation .responsive-addons-message-content p{
+    padding: 0px;
+    margin: 0px;
+}
+#responsive-welcome_banner-section {
+    margin-bottom: 17px;
+    padding: 0;
+    height: 422px;
+    border:none;
+    position:relative; 
+}
+#responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section {
+    width: 100%;
+    flex-shrink: 0;
+    top: 40px;
+    left: 40px;
+    gap: 10px;
+    background: linear-gradient(144.76deg, #9e43ee 4.59%, #6d29a7 117.6%);
+    box-shadow: 0px 0.7980122566223145px 5.586085796356201px 0px #444c5009;
+    box-shadow: 0px 2.680356979370117px 18.76249885559082px 0px #444c500e;
+    box-shadow: 0px 12px 84px 0px #444c5017;
+    padding:0px !important; 
+}
+#responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-content {
+    position: relative;
+    padding-left: 5%;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+#responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-text {
+    width: fit-content;
+    height: 36px;
+    font-family: "Libre Franklin";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 0px;
+}
+#responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-tag {
+    font-family: "Libre Franklin";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    width: 427px;
+    height: 28px;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+    margin-top:5px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-explore-button{
+    display: flex;
+    width: 190px;
+    padding: 12px 24px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--extended-yellow-200, #FEF08A);
+    background: var(--extended-yellow-400, #FACC15);
+    box-sizing:border-box;
+    padding-left: 12px 24px;
+    color: var(--extended-yellow-800, #854D0E);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration:none;
+    display:inline;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-explore-button:hover{
+    color: var(--extended-yellow-800, #854D0E);
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-features-section {
+    display: flex;
+    background: var(--pallate-white, #FFF);
+    padding-left: 5%;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background: var(--pallate-white, #FFF);
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-features {
+    width: 549px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-features h4 {
+    color: var(--pallate-tailwindss-grey-800, #1f2937);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-feature-rows {
+    width: 549px;
+    height: 48px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: red;
+    margin-top: 0px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-feature-rows-section {
+    height: 48px;
+    width: 549px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-features-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 46px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-features-row .dashicons-saved {
+    font-size: 26px;
+    line-height: inherit;
+    color: #16A34A;
+}
+#responsive-welcome_banner-section .feature-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#responsive-welcome_banner-section .feature-row-text {
+    font-family: "Libre Franklin";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    width:150px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+    display: flex;
+    width: 170px;
+    height:44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--word-press-blue, #2271b1);
+    position: relative;
+    top: 38px;
+    text-decoration: none;
+    border: none;
+}
+#responsive-welcome_banner-section .upgrade-button-text {
+    color: var(--pallate-white, #fff);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button .dashicons-arrow-right-alt {
+    color: white;
+}
+#responsive-welcome_banner-section .underline_image {
+    width: 124px;
+    height: 8px;
+    top: 45%;
+    left: 12%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    bottom: 0;
+    position: absolute;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-close-icon {
+    width: 24px;
+    height: 24px;
+    top: -138px;
+    left: 96%;
+    padding: 0.9999996423721313px 1.0000003576278687px 1.0000003576278687px
+        0.9999996423721313px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+#responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+    max-width:449px;
+    left: 60%;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    top: 63px;
+    flex-shrink: 0;
+    display: flex;
+    margin-right: 100px;
+    padding-right: 0px;
+    margin-right: 0px;
+    right: 0;
+}
+#responsive-welcome_banner-section  .rst_welcomeBanner_image1 {
+    width: 224.5px;
+    height: 269.973px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    position:relative;
+    top:22px;
+    background: url("../images/farmer_image.png");
+}
+#responsive-welcome_banner-section .rst_welcomeBanner_image2{
+    width: 224.5px;
+    height: 269.973px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background:orange;
+    position:relative;
+    top:22px;
+    background:url("../images/nature_image.png");
+}
+#responsive-welcome_banner-section .rst_welcomeBanner_image3{
+    width: 259.423px;
+    height: 312px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background:orange;
+    position:relative;
+    top:0px;
+    left:-357px;
+    z-index:1;
+    background:url("../images/doctor_image.png");
+}
+@media screen and (max-width: 600px){
+    #responsive-welcome_banner-section {
+        margin-bottom: 17px;
+        height: 888px;
+        border: none;
+    }
+    #responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-tag {
+        font-family: "Libre Franklin";
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        width: 427px;
+        height: 28px;
+        text-align: left;
+        color: white;
+        margin-bottom: 36px;
+        margin-top: -16px;
+        width: fit-content;
+    }
+    #responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-text { 
+        height: 36px;
+        font-family: "Libre Franklin";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-bottom: 0px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-close-icon {
+        width: 24px;
+        height: 24px;
+        top: -147px;
+        left: 92%;
+        padding: 0.9999996423721313px 1.0000003576278687px 1.0000003576278687px 0.9999996423721313px;
+        position: relative;
+        border: none;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    #responsive-welcome_banner-section .underline_image {
+        width: 124px;
+        height: 8px;
+        top: -17px;
+        left: 105px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 0;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features-section {
+        display: flex;
+        background: var(--pallate-white, #FFF);
+        padding-left: 0%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 0;
+        background: var(--pallate-white, #FFF);
+        position: relative;
+        top: 328px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features {
+        width: 341px;
+        height: 244px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        top: 17px;
+        position: relative;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-feature-rows-section {
+        height: 90%;
+        width: 135px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+        display: flex;
+        width: 170px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--word-press-blue, #2271b1);
+        position: relative;
+        bottom: -200px;
+        top: 18px;
+        margin: auto;
+        text-decoration: none;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+        height: 312px;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 0;
+        top: 197px;
+        flex-shrink: 0;
+        display: flex;
+        margin-right: 100px;
+        padding-right: 0px;
+        margin-right: 0px;
+        right: 0;
+        left: 11px;
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image1 {
+        width: 200.5px;
+        height: 269.973px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        position: relative;
+        top: 22px;
+        background: url(../images/farmer_image.png);
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image2 {
+        width: 164.5px;
+        height: 269.973px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: orange;
+        position: relative;
+        top: 22px;
+        background: url(../images/nature_image.png);
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image3 {
+        width: 232.423px;
+        height: 312px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: orange;
+        position: relative;
+        top: 0px;
+        left: -302px;
+        z-index: 1;
+        background: url(../images/doctor_image.png);
+    }
+    #responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-tag {
+        font-family: "Libre Franklin";
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        width: 427px;
+        height: 28px;
+        text-align: left;
+        color: white;
+        margin-bottom: 25px;
+        margin-top:5px;
+        width:fit-content;
+    }
+    #responsive-welcome_banner-section .reponsive-welcome_banner-welcome-section-text {
+        height: 36px;
+        font-family: "Libre Franklin";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-bottom: 0px;
+    }
+    #responsive-welcome_banner-section .underline_image {
+        width: 124px;
+        height: 8px;
+        top: 64px;
+        left: 105px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px){
+    #responsive-welcome_banner-section .responsive-welcome_banner-feature-rows-section {
+        height: 48px;
+        width: 549px;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0px;
+    }
+    #welcome_banner-section .responsive-welcome_banner-feature-rows-section {
+        height: 48px;
+        width: 549px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0px;
+    }
+    #responsive-welcome_banner-section {         
+        margin-bottom: 0px;
+        height: 879px;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+        display: flex;
+        width: 170px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--word-press-blue, #2271b1);
+        position: relative;
+        bottom: -200px;
+        top: 160px;
+        text-decoration: none;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+        width: 449px;
+        height: 312px;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 0;
+        top: 149px;
+        flex-shrink: 0;
+        display: flex;
+        margin-right: 100px;
+        padding-right: 0px;
+        margin-right: 0px;
+        right: 0;
+        left: 85px;   
+    }
+    #responsive-welcome_banner-section  .rst_welcomeBanner_image1 {
+        width: 200.5px;
+        height: 269.973px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        position:relative;
+        top:22px;
+        background: url("../images/farmer_image.png");
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image2{
+        width: 200.5px;
+        height: 269.973px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background:orange;
+        position:relative;
+        top:22px;
+        background:url("../images/nature_image.png");
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image3{
+        width: 220.423px;
+        height: 312px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background:orange;
+        position:relative;
+        top:0px;
+        left:-357px;
+        z-index:1;
+        background:url("../images/doctor_image.png");
+    }
+}
+@media screen and ( max-width:913px) and (min-width:767px){
+    #responsive-welcome_banner-section .responsive-welcome_banner-features-section {
+        height: 339px;
+        display: flex;
+        background: var(--pallate-white, #FFF);
+        padding-left: 0%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 0;
+        background: var(--pallate-white, #FFF);
+        position: relative;
+        top: 5px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+        display: flex;
+        width: 170px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--word-press-blue, #2271b1);
+        position: relative;
+        top: 42px;
+        left: -281px;
+        text-decoration: none;
+        border: none;
+    }   
+    #responsive-welcome_banner-section .responsive-welcome_banner-features {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        top: 17px;
+        left: 1%;
+        position: absolute;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-feature-rows-section {
+        height: 100%;
+        width: 135px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+    }
+    #responsive-welcome_banner-section {
+        margin-bottom: 136px;
+        height: 422px;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features-section {
+        height: 347px;
+        display: flex;
+        background: var(--pallate-white, #FFF);
+        padding-left: 0%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 0;
+        background: var(--pallate-white, #FFF);
+        position: relative;
+        top: 5px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+        width: 449px;
+        left: 34%;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 1;
+        top: 33.9%;
+        flex-shrink: 0;
+        display: flex;
+        margin-right: 100px;
+        padding-right: 0px;
+        margin-right: 0px;
+        right: 0;
+        left:36%;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-feature-rows-section {
+        height: 100%;
+        width: 135px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+        position: relative;
+        left: 54px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features h4 {
+        color: var(--pallate-tailwindss-grey-800, #1f2937);
+        text-align: center;
+        font-family: "Libre Franklin";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        left: 28px;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+        display: flex;
+        width: 170px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--word-press-blue, #2271b1);
+        position: absolute;
+        top: 259px;
+        left: 37px;
+        text-decoration: none;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-close-icon {
+        width: 24px;
+        height: 24px;
+        top: -138px;
+        left: 95%;
+        padding: 0.9999996423721313px 1.0000003576278687px 1.0000003576278687px 0.9999996423721313px;
+        position: relative;
+        border: none;
+        background-color: transparent;
+        text-decoration: none;
+    }  
+    #responsive-welcome_banner-section .underline_image {
+        width: 124px;
+        height: 8px;
+        top: 45%;
+        left: 30%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        bottom: 0;
+        position: absolute;
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image1 {
+        width: 189.5px;
+        height: 265.973px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        position: relative;
+        top: 22px;
+        background: url(../images/farmer_image.png);
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image2 {
+        width: 189.5px;
+        height: 269.973px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: orange;
+        position: relative;
+        top: 22px;
+        background: url(../images/nature_image.png);
+    }
+    #responsive-welcome_banner-section .rst_welcomeBanner_image3 {
+        width: 235.423px;
+        height: 315px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: orange;
+        position: relative;
+        top: 0px;
+        left: -317px;
+        z-index: 1;
+        background: url(../images/doctor_image.png);
+    }
+}
+@media screen and (max-width:1700px) and (min-width:1340px){
+    #responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+        width: 449px;
+        height: 312px;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 0;
+        top: 11.7%;
+        flex-shrink: 0;
+        display: flex;
+        margin-right: 100px;
+        padding-right: 0px;
+        margin-right: 0px;
+        right: 0;
+        left: 680px;
+    }
+    #responsive-welcome_banner-section {
+        height: 422px;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features {
+        height: 251px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        top: 17px;
+        left: -90px;
+        position: relative;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features {
+        height: 121px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        top: 17px;
+        left: 0px;
+        position: relative;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+        display: flex;
+        width: 170px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--word-press-blue, #2271b1);
+        position: relative;
+        top: 15px;
+        text-decoration: none;
+        border: none;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+        width: 449px;
+        height: 312px;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 0;
+        top: 11.1%;
+        flex-shrink: 0;
+        display: flex;
+        margin-right: 100px;
+        padding-right: 0px;
+        margin-right: 0px;
+        right: 0;
+        left: 680px;
+    }    
+}   
+@media screen and (min-width:912px) and (max-width:1340px){
+    #responsive-welcome_banner-section .responsive-welcome_banner-images_collection {
+        width: 449px;
+        height: 312px;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 0;
+        top: 33.2%;
+        flex-shrink: 0;
+        display: flex;
+        margin-right: 100px;
+        padding-right: 0px;
+        margin-right: 0px;
+        right: 0;
+        left: 35%;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-features {
+        height: 121px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        top: 3px;
+        left: 2%;
+        position: absolute;
+    }
+    #responsive-welcome_banner-section .responsive-welcome_banner-upgrade-button {
+        display: flex;
+        width: 170px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--word-press-blue, #2271b1);
+        position: absolute;
+        top: 256px;
+        text-decoration: none;
+        border: none;
+        left: 45px;
+    }
+}

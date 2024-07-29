@@ -1,0 +1,225 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .wp-full-overlay-header .button.responsive-demo-import-options-pro, .wp-full-overlay-header .button.responsive-page-import-options-template-pro {
+	margin: 0;
+	font-size: 16px;
+	height: 40px;
+	padding: 0 20px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+responsive-ready-site-import-pro.button.updating-message:before,
+responsive-ready-site-import-pro.button.installing:before {
+	-webkit-animation: cssAnimation .72s ease infinite;
+	-moz-animation: cssAnimation .72s ease infinite;
+	-o-animation: cssAnimation .72s ease infinite;
+	-ms-animation: cssAnimation .72s ease infinite;
+	animation: cssAnimation .72s ease infinite;
+}
+.button.updating-message.responsive-ready-site-import-pro:before {
+	vertical-align: text-bottom;
+	margin: 10px 5px 0 -2px;
+}
+#responsive-addons-license{
+	background: #fff;
+	padding: 40px;
+}
+#responsive-addons-license-info{
+	background: #fff;
+	padding: 40px;
+}
+#responsive-addons-license .submit, #responsive-addons-license-info .submit{
+	padding: 5px 50px;
+	height: auto;
+	margin-left: 18%;
+	margin-top: 0px;
+	min-width: 215px;
+}
+#responsive-addons-license th,#responsive-addons-license-info th{
+	width: 35%;
+	text-align: right;
+}
+#responsive-addons-license td, #responsive-addons-license-info td{
+	text-align: left;
+}
+#responsive-addons-license td input, #responsive-addons-license-info td input{
+	padding: 10px 33px;
+}
+@media screen and ( max-width : 768px ){
+	#responsive-addons-license .submit, #responsive-addons-license-info .submit{
+		margin: 0px;
+	}
+}
+#responsive-theme-addons-activation {
+	border: none;
+	padding: 20px;
+}
+#responsive-theme-addons-activation .responsive-addons-pro-message-inner {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+#responsive-theme-addons-activation .responsive-addons-pro-message-icon {
+	font-size: 20px;
+}
+#responsive-theme-addons-activation .responsive-addons-pro-message-content {
+	padding: 0 20px;
+}
+#responsive-theme-addons-activation .responsive-addons-pro-message-content .responsive-addons-pro-message-actions {
+	margin-top: 10px;
+}
+#responsive-theme-addons-activation .responsive-addons-pro-message-content p{
+	padding: 0px;
+	margin: 0px;
+}
+@media screen and (max-width: 768px ) {
+	#responsive-theme-addons-activation .responsive-addons-pro-message-inner {
+		display: block;
+		text-align: center;
+	}
+}
+.processing:before {
+	margin: 0 3px 0px 0px;
+}
+.processing:before {
+	animation: rotation 2s infinite linear;
+}
+.processing:before {
+	color: #f56e28;
+	content: "\f463";
+}
+.processing:before {
+	display: inline-block;
+	font: normal 20px/1 dashicons;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+}
+#responsive-theme-addons-activation a {
+	box-shadow: none;
+	outline: none;
+}
+.wp-full-overlay-header .button.responsive-page-import-options-pro {
+	margin: 0;
+	font-size: 16px;
+	height: 40px;
+	padding: 0 20px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+#responsive-pro-system-info{
+	padding: 15px;
+}
+#responsive-pro-system-info .responsive-pro-system-info-section {
+	margin-bottom: 10px;
+}
+#responsive-pro-system-info #responsive-pro-system-info-raw-code {
+	width: 100%;
+	height: 200px;
+}
+
+	.responsive-custom-fonts-file-wrap.form-field .responsive-custom-fonts-link{
+	width: 80%;
+}
+
+.responsive-custom-fonts-file-wrap.form-field .responsive-custom-fonts-upload {
+	margin-top: 2px;
+	float: right;
+	margin-right: 5%;
+	line-height: 1.5;
+	min-height: 10px;
+}
+
+.responsive-custom-fonts-upload svg {
+	margin-top: 5px;
+}
+
+/* Admin CSS related White label */
+
+.r-pro-white-label-container{
+
+	font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+}
+
+.white-label-form-fields {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 0px;
+}
+
+.white-label-col-1 { grid-area: 1 / 1 / 2 / 2; }
+.white-label-col-2 { grid-area: 1 / 2 / 2 / 3; }
+
+.responsive-header {
+	margin: 0 16px;
+	height: 118px;
+	left: 200px;
+	top: 0px;
+}
+
+.white-label-content {
+	margin-top:65px;
+	margin-left:90px;
+	margin-right:90px;
+}
+
+.ui-sortable-handle{
+	padding-left:25px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.white-label-responsive-header img {
+	width:52px;
+	height:52px;
+}
+
+.responsive-pro-title{
+	font-style: normal;
+	line-height: 33px;
+	padding-left:8px;
+	margin-top: 7px;
+}
+
+.form-field{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.white-label-content input{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+}
+.admin-help {
+	padding-left: 25px;
+}
+
+.r-pro-white-label-container #submit{
+	width: 180px;
+	height: 50px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 33px;
+	border-radius:5px;
+}
+.postbox, .stuffbox{
+	margin-bottom: 50px;
+}
+
+.regular-text{
+	margin-top:5px;
+}

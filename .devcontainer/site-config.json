@@ -1,0 +1,5 @@
+{
+    "site_name": "${containerWorkspaceFolderBasename}",
+    "site_environment": "dev",
+    "framework": "wordpress_network"
+}

@@ -1,0 +1,25 @@
+{
+  "recommendations": [
+    "formulahendry.vscode-mysql",
+    "wordpresstoolbox.wordpress-toolbox",
+    "tungvn.wordpress-snippet",
+    "johnbillion.vscode-wordpress-hooks",
+    "redhat.vscode-yaml",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-scss",
+    "valeryanm.vscode-phpsab",
+    "neilbrayfield.php-docblocker",
+    "shd101wyy.markdown-preview-enhanced",
+    "syler.sass-indented",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "mikebovenlander.formate",
+    "thekalinga.bootstrap4-vscode",
+    "michelemelluso.code-beautifier",
+    "github.copilot",
+    "github.codespaces",
+    "satiromarra.code-sftp",
+    "rholdos.twig-language-support"
+  ],
+  "unwantedRecommendations": ["vue.volar", "octref.vetur"]
+}

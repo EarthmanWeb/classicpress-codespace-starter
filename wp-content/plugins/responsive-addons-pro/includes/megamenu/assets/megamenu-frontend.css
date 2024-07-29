@@ -1,0 +1,63 @@
+
+@media (min-width: 767px) {
+
+    .responsive-megamenu-parent .responsive-megamenu.sub-menu .sub-menu.responsive-megamenu-child {
+        position: unset !important;
+        background-color: unset;
+    }
+
+    .responsive-megamenu {
+        display: flex;
+    }
+
+    .responsive-megamenu > li {
+        flex: 1;
+    }
+
+    .main-navigation .children > li.focus > .children,
+    .main-navigation .children > li.focus > .sub-menu,
+    .main-navigation .children > li:hover > .children,
+    .main-navigation .children > li:hover > .sub-menu,
+    .main-navigation .sub-menu > li.focus > .children,
+    .main-navigation .sub-menu > li.focus > .sub-menu,
+    .main-navigation .sub-menu > li:hover > .children,
+    .main-navigation .sub-menu > li:hover > .sub-menu {
+        left: unset !important;
+        top: unset !important;
+    }
+
+    .main-navigation li.responsive-megamenu-parent .children .children,
+    .main-navigation li.responsive-megamenu-parent .children .sub-menu,
+    .main-navigation li.responsive-megamenu-parent .sub-menu .children,
+    .main-navigation li.responsive-megamenu-parent .sub-menu .sub-menu {
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .main-navigation .sub-menu {
+        box-shadow: none !important;
+    }
+
+    .responsive-full-megamenu-wrapper {
+        position: absolute;
+        background-color: white;
+    }
+
+    .responsive-megamenu-custom-content {
+        margin-bottom: 14px;
+    }
+
+    .responsive-megamenu-custom-text {
+        padding: 0 16px;
+    }
+
+    .responsive-megamenu-bg-transparent {
+        background-color: transparent !important;
+    }
+
+    .responsive-megamenu-disable-link:hover,
+    .responsive-megamenu-parent .responsive-megamenu.sub-menu li.menu-item a.menu-link[href="javascript:void(0)"] {
+        cursor: default;
+    }
+
+}

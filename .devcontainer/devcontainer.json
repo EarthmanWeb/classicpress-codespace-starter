@@ -1,0 +1,183 @@
+{
+  "name": "Debian SERVER",
+  "dockerComposeFile": "server/docker-compose.yml",
+  "service": "app",
+  "forwardPorts": [8080, 8081, 3306],
+  "portsAttributes": {
+    "3306": {
+      "label": "Database (internal)"
+    },
+    "8080": {
+      "label": "WordPress"
+    },
+    "8081": {
+      "label": "phpMyAdmin"
+    }
+  },
+  "postStartCommand": "nohup sudo service apache2 stop && service apache2 start &",
+  "postCreateCommand": "bash .devcontainer/server/init-server.sh",
+  "mounts": ["source=bashhistory,target=/commandhistory,type=volume"],
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "runArgs": [
+        "--env",
+        "XDEBUG_MODE=debug,develop",
+        "--env",
+        "XDEBUG_CONFIG=client_host=127.0.0.1 client_port=9003"
+      ],
+      "settings": {
+        "terminal.integrated.scrollback": 10000,
+        "explorer.confirmDelete": false,
+        "yaml.schemas": {
+          "file:///home/vscode/.vscode-remote/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        },
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "git.autofetch": true,
+        "[yaml]": {
+          "editor.defaultFormatter": "redhat.vscode-yaml"
+        },
+        "redhat.telemetry.enabled": true,
+        "security.workspace.trust.untrustedFiles": "open",
+        "[scss]": {
+          "editor.defaultFormatter": "MikeBovenlander.formate"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "phpcs.executablePath": "",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "terminal.integrated.enableMultiLinePasteWarning": "never",
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[css]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "CodeGPT.maxTokens": 4097,
+        "terminal.integrated.defaultProfile.osx": "bash",
+        "prettier.singleAttributePerLine": true,
+        "editor.language.colorizedBracketPairs": [],
+        "editor.maxTokenizationLineLength": 500000,
+        "atlascode.jira.lastCreateSiteAndProject": {
+          "siteId": "",
+          "projectKey": ""
+        },
+        "window.zoomLevel": 1,
+        "editor.accessibilitySupport": "off",
+        "accessibility.verbosity.terminal": false,
+        "accessibility.verbosity.diff-editor": false,
+        "editor.inlineSuggest.enabled": true,
+        "settingsSync.ignoredExtensions": ["github.copilot"],
+        "github.codespaces.createCodespaceInNewWindow": true,
+        "github.codespaces.showPerformanceExplorer": true,
+        "files.autoSave": "off",
+        "phpsab.fixerArguments": [],
+        "files.associations": {
+          "*.module": "php",
+          "*.inc": "php"
+        },
+        "files.exclude": {
+          "**/.php_cs.cache": true,
+          "**/logs/*": false
+        },
+        "explorer.excludeGitIgnore": false,
+        "git.ignoreLimitWarning": true,
+        "gitlens.advanced.blame.delayAfterEdit": 0,
+        "git.detectSubmodulesLimit": 100,
+        "editor.formatOnSave": true,
+        "[php]": {
+          "files.insertFinalNewline": true,
+          "files.trimFinalNewlines": true,
+          "editor.defaultFormatter": "valeryanm.vscode-phpsab",
+          "editor.tabSize": 4,
+          "editor.insertSpaces": false,
+          "editor.detectIndentation": false
+        },
+        "php.validate.executablePath": "/usr/bin/php",
+        "php.validate.run": "onType",
+        "php.debug.idekey": "VSCODE",
+        "php.debug.port": 9003,
+        "php.debug.log": true,
+        "[html]": {
+          "editor.defaultFormatter": "vscode.html-language-features"
+        },
+        "[twig]": {
+          "files.insertFinalNewline": false,
+          "files.trimFinalNewlines": true,
+          "editor.defaultFormatter": "vscode.html-language-features",
+          "editor.tabSize": 3,
+          "editor.insertSpaces": true,
+          "editor.detectIndentation": true
+        },
+        "[json]": {
+          "editor.defaultFormatter": "vscode.json-language-features",
+          "editor.insertSpaces": true,
+          "editor.tabSize": 2,
+          "files.insertFinalNewline": false,
+          "files.trimFinalNewlines": true
+        },
+        "[vue,js,esm.js]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.insertSpaces": true,
+          "editor.tabSize": 4,
+          "files.insertFinalNewline": false,
+          "files.trimFinalNewlines": true
+        },
+        "twig-language-2.forceIndent": true,
+        "phpsab.composerJsonPath": "${containerWorkspaceFolder}/.wpcs/composer.json",
+        "phpsab.executablePathCBF": "${containerWorkspaceFolder}/.wpcs/vendor/bin/phpcbf",
+        "phpsab.executablePathCS": "${containerWorkspaceFolder}/.wpcs/vendor/bin/phpcs",
+        "phpsab.debug": true,
+        "phpsab.snifferShowSources": true,
+        "phpsab.fixerEnable": true,
+        "phpsab.snifferEnable": true,
+        "phpsab.snifferMode": "onSave",
+        "phpsab.standard": "MySource",
+        "editor.codeActionsOnSave": {},
+        "liveSassCompile.settings.formats": [
+          {
+            "format": "compressed",
+            "extensionName": ".css",
+            "generateMap": true,
+            "savePath": "/wp-content/themes/bootscore-child-main/css",
+            "savePathReplacementPairs": null
+          }
+        ],
+        "liveSassCompile.settings.excludeList": [
+          "/**/node_modules/**",
+          "/**/bootscore-main/**",
+          "/**/bootstrap/**",
+          "/**/plugins/**"
+        ],
+        "liveSassCompile.settings.showOutputWindowOn": "Error"
+      },
+      "extensions": [
+        "formulahendry.vscode-mysql",
+        "wordpresstoolbox.wordpress-toolbox",
+        "tungvn.wordpress-snippet",
+        "johnbillion.vscode-wordpress-hooks",
+        "redhat.vscode-yaml",
+        "esbenp.prettier-vscode",
+        "mrmlnc.vscode-scss",
+        "valeryanm.vscode-phpsab",
+        "neilbrayfield.php-docblocker",
+        "shd101wyy.markdown-preview-enhanced",
+        "syler.sass-indented",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "mikebovenlander.formate",
+        "thekalinga.bootstrap4-vscode",
+        "michelemelluso.code-beautifier",
+        "github.copilot",
+        "github.codespaces",
+        "satiromarra.code-sftp",
+        "mblode.twig-language-2",
+        "rholdos.twig-language-support",
+        "glenn2223.live-sass",
+        "felixfbecker.php-debug"
+      ]
+    }
+  }
+}

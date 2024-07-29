@@ -1,0 +1,149 @@
+/**
+ * All of the CSS forgetting started admin-specific functionality should be
+ * included in this file.
+ */
+
+.responsive-addons-settings-tab-content h2 {
+	margin-top: 0;
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 20px;
+	color: #000;
+}
+.responsive-addons-settings-tab-content p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.responsive-addons-settings-tab-content .content-container{
+	display: flex;
+	gap: 24px;
+}
+.responsive-addons-settings-tab-content ul{
+	padding-left: 30px;
+	list-style-type: disc;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.rst_app-connect-action-btns {
+	margin-top: 30px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.rst_app-connect-action-btns button {
+	padding: 12px 21px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+}
+.rst-start-auth.disable {
+	pointer-events: none;
+}
+ .rst_app-connect-action-btns .rst-start-auth-new{
+	color: #FFF;
+	background: #0059B3;
+	border: 1px solid #FFF;
+	position: relative;
+}
+.rst_app-connect-action-btns .rst-start-auth-exist{
+	color: #2A4A7E;
+	border: 1px solid #7195D0;
+	background: #FFF;
+	position: relative;
+}
+.responsive-addons-tab.responsive-addons-active-tab {
+	color: #0059B3;
+	border-bottom: 1px solid #0059B3;
+}
+.responsive-addons-settings-tab-content .connection-status {
+	padding-left: 58px;
+}
+.responsive-addons-settings-tab-content .settings-success-content h2 {
+	font-size: 22px;
+	color: #3F3F46;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: -36px;
+}
+.app-connect-info {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.rst_app-after-connect-action-btns {
+	display: flex;
+	gap: 20px;
+}
+.rst_app-after-connect-action-btns button {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.rst_app-after-connect-action-btns .rst-go-to-templates {
+	color: #FFF;
+	border: 1px solid #FFF;
+	background: #0059B3;
+	padding: 12px 25px;
+}
+.rst_app-after-connect-action-btns .rst-delete-auth {
+	color: #FF0000;
+	border: 1px solid #FF0000;
+	background: #FFF;
+	padding: 12px 35px;
+	position: relative;
+}
+.rst_app-after-connect-action-btns .rst-delete-auth:hover {
+	background: #FF0000;
+	color: #FFF;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+#loader {
+	display: none;
+	position: absolute;
+	right: 45%;
+	top: 19%;
+	width: 25px;
+	height: 25px;
+	border:solid 5px #000;
+	border-radius: 50%;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+    transition: all 0.5s ease-in;
+    animation-name: rotate; 
+    animation-duration: 1.0s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+#responsive_raddons-settings #responsive-theme-setting-app-connection-section {
+	display: block;
+}
+#responsive-theme-raddons-setting-wl-section {
+	display: none;
+}
+@media (max-width: 1500px) {
+	.help-video iframe {
+		width: 300px;
+	}
+}

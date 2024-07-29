@@ -1,0 +1,338 @@
+# Copyright (C) 2019 CyberChimps
+# This file is distributed under the same license as the Responsive Pro package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Responsive Pro 1.0.4\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/responsive-addons-pro\n"
+"POT-Creation-Date: 2019-12-25 09:28:36+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: admin/class-responsive-addons-pro-admin.php:133
+msgid "Installing.."
+msgstr ""
+
+#: includes/class-responsive-addons-pro.php:485 wc-am-client.php:575
+msgid "%s activated. "
+msgstr ""
+
+#: includes/class-responsive-addons-pro.php:491 wc-am-client.php:581
+msgid ""
+"Connection failed to the License Key API server. Try again later. There may "
+"be a problem on your server preventing outgoing requests, or the store is "
+"blocking your request to activate the plugin/theme."
+msgstr ""
+
+#: includes/class-responsive-addons-pro.php:612 wc-am-client.php:611
+msgid "API Key deactivated. "
+msgstr ""
+
+#: includes/class-responsive-addons-pro.php:760
+msgid "Theme Activated"
+msgstr ""
+
+#: includes/class-responsive-addons-pro.php:776
+msgid "No plugin specified"
+msgstr ""
+
+#: includes/class-responsive-addons-pro.php:797
+msgid "Plugin Activated"
+msgstr ""
+
+#: includes/customizer/class-responsive-addons-pro-customizer.php:55
+msgid "Copyright text"
+msgstr ""
+
+#: includes/customizer/class-responsive-addons-pro-customizer.php:73
+msgid "Display Powered By WordPress Link"
+msgstr ""
+
+#: includes/customizer/class-responsive-addons-pro-customizer.php:100
+msgid "Footer Elements"
+msgstr ""
+
+#: includes/customizer/class-responsive-addons-pro-customizer.php:108
+msgid "Social Icons"
+msgstr ""
+
+#: includes/customizer/class-responsive-addons-pro-customizer.php:109
+msgid "Footer Menu"
+msgstr ""
+
+#: includes/customizer/class-responsive-addons-pro-customizer.php:110
+msgid "Copy Right Text"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:56
+msgid "Title"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:68
+msgid "Price"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:79
+msgid "Breadcrumb"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:90
+msgid "Content"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:192
+msgid "Font Family"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:221
+msgid "Font Weight"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:222
+msgid "Important: Not all fonts support every font-weight."
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:229
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:302
+msgid "Default"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:230
+msgid "Thin: 100"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:231
+msgid "Light: 200"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:232
+msgid "Book: 300"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:233
+msgid "Normal: 400"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:234
+msgid "Medium: 500"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:235
+msgid "Semibold: 600"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:236
+msgid "Bold: 700"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:237
+msgid "Extra Bold: 800"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:238
+msgid "Black: 900"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:262
+msgid "Font Style"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:269
+msgid "Normal"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:270
+msgid "Italic"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:295
+msgid "Text Transform"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:303
+msgid "Capitalize"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:304
+msgid "Lowercase"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:305
+msgid "Uppercase"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:349
+msgid "Font Size"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:350
+msgid "You can add: px-em-%"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:403
+msgid "Line Height"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:439
+msgid "Letter Spacing (px)"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-product-typography.php:477
+msgid "Font Color"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:50
+msgid "Shop Quick View"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:56
+msgid "Disabled"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:57
+msgid "On Image"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:58
+msgid "On Image Click"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:59
+msgid "After Summary"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:81
+msgid "Shop Pagination Style"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:87
+msgid "Square"
+msgstr ""
+
+#: includes/customizer/settings/class-responsive-addons-pro-woocommerce-shop-pagination.php:88
+msgid "Circle"
+msgstr ""
+
+#: includes/importers/class-responsive-ready-sites-importer-pro.php:79
+msgid "Request site API URL is empty. Try again!"
+msgstr ""
+
+#: wc-am-client.php:129
+msgid " Activation"
+msgstr ""
+
+#: wc-am-client.php:130
+msgid " API Key Activation"
+msgstr ""
+
+#: wc-am-client.php:131 wc-am-client.php:407
+msgid "API Key Activation"
+msgstr ""
+
+#: wc-am-client.php:132
+msgid "API Key Deactivation"
+msgstr ""
+
+#: wc-am-client.php:227
+msgid ""
+"Attempt to migrate data failed. Deactivate then reactive this plugin or "
+"theme, then enter your API Key on the settings screen to receive software "
+"updates. Contact support if assistance is required."
+msgstr ""
+
+#: wc-am-client.php:341
+msgid ""
+"The <strong>%s</strong> API Key has not been activated, so the %s is "
+"inactive! %sClick here%s to activate <strong>%s</strong>."
+msgstr ""
+
+#: wc-am-client.php:358
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %s updates. Please add %s to %s."
+msgstr ""
+
+#: wc-am-client.php:390 wc-am-client.php:394
+msgid "Save Changes"
+msgstr ""
+
+#: wc-am-client.php:411
+msgid "API Key"
+msgstr ""
+
+#: wc-am-client.php:420
+msgid "Product ID"
+msgstr ""
+
+#: wc-am-client.php:426
+msgid "API Key Status"
+msgstr ""
+
+#: wc-am-client.php:435
+msgid "API Deactivation"
+msgstr ""
+
+#: wc-am-client.php:439
+msgid "Deactivate API Key"
+msgstr ""
+
+#: wc-am-client.php:453
+msgid "Activated"
+msgstr ""
+
+#: wc-am-client.php:457
+msgid "Deactivated"
+msgstr ""
+
+#: wc-am-client.php:647
+msgid ""
+"The API Key could not be deactivated. Use the API Key Deactivation tab to "
+"manually deactivate the API Key before activating a new API Key. If all "
+"else fails, go to Plugins, then deactivate and reactivate this plugin, or "
+"if a theme change themes, then change back to this theme, then go to the "
+"Settings for this plugin/theme and enter the API Key information again to "
+"activate it. Also check the My Account dashboard to see if the API Key for "
+"this site was still active before the error message was displayed."
+msgstr ""
+
+#: wc-am-client.php:658
+msgid "Deactivates an API Key so it can be used on another blog."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Responsive Pro"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.cyberchimps.com/responsive-pro"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds pro features to your Responsive theme. Import pro Ready Sites. Get "
+"private, priority support."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "CyberChimps"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.cyberchimps.com/"
+msgstr ""
