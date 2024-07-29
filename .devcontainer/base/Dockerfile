@@ -17,4 +17,8 @@ RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g yarn" 2>&
 # Install Composer.
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Install Terminus.
+RUN mkdir /utilities && composer create-project pantheon-systems/terminus /utilities/terminus --ignore-platform-req=ext-pcov \
+    && echo -e '\nPATH="/utilities/terminus/bin:$PATH"' >> /home/vscode/.bashrc
+
 

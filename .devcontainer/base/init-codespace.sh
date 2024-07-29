@@ -100,3 +100,14 @@ echo -e
 echo "Use command: cat /home/vscode/.ssh/id_rsa and then Copy the private key above into your github secrets as SSH_KEY to persist this key"
 echo -e "\e[0m"
 fi
+
+# if $PANTHEON_TOKEN is set, add pantheon access
+if [ -n "${PANTHEON_TOKEN-}" ]; then
+echo 'Add pantheon access'
+set +x
+terminus auth:login --machine-token="$PANTHEON_TOKEN"
+set -x
+cd /workspaces/$(echo $RepositoryName)
+git remote add pantheon "ssh://codeserver.dev.$PANTHEON_SITEID@codeserver.dev.$PANTHEON_SITEID.drush.in:2222/~/repository.git"
+ssh-keyscan -p 2222 codeserver.dev.$PANTHEON_SITEID.drush.in >> ~/.ssh/known_hosts
+fi

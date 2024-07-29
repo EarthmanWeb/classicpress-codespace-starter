@@ -2,19 +2,24 @@
 
 Starter for codespace dev for WP and/or ClassicPress Projects, with Basic Extensions, SFTP and PHPCS setup
 
-## Codespace Development - Local
+- Fork this repo to get started with a new WP or ClassicPress project in your own codespace
+- Save the repo as a template, and use for each new project
+- Modify the `.devcontainer/` and `.vscode/` files to customize your dev environment as needed
 
-### 1. setup the dev environment
+## Codespace Development Environment Setup
+
+### 1. Using the dev environment in Codespace container only
 
 - Create a new Repo in Github using this repo as a template
 - Create a codespace from the new repo
-- Allow the codespace to build
+- Allow the codespace to build - review the output, watch for errors
 - Allow port permissions when prompted
 - Open a browser to http://127.0.0.1:8080/wp-login.php - admin|admin
 - PHPMyadmin at http://127.0.0.1:8081 - wordpress|wordpress
 - For ClassicPress, just go to the plugins section and click 'switch'
 
-## FTP Development Remote (lightsail only)
+
+## SFTP Development Remote (pantheon or namecheap)
 
 ### 1. setup the dev environment
 
@@ -23,9 +28,27 @@ Starter for codespace dev for WP and/or ClassicPress Projects, with Basic Extens
 - Allow the codespace to build
 - Change the contents of .devcontainer/devcontainer.json to those located in .devcontainer/devcontainer-base.json
 - Rebuild the container (full rebuild)
-- Copy the contents of .vscode/sftp_lightsail.json .vscode/sftp.json
+- Follow SFTP setup instructions in `.vscode/SFTP_README.md`
 
-### 2. setup a new WP instance in Lightsail or Namcheap cpanel (softaculous WP install)
+### 2. setup Terminus for Pantheon
+
+- Create a new token in your Pantheon User settings
+- Add the token to Github Codespace secrets for this repo - call it 'PANTHEON_TOKEN'
+- Add your site_id from your Dashboard URL to Github Codespace secrets for this repo - call it PANTHEON_SITEID
+- Rebuild codespace
+
+## SFTP Development Remote (lightsail only)
+
+### 1. setup the dev environment
+
+- Create a new Repo in Github using this repo as a template
+- Create a codespace from the new repo
+- Allow the codespace to build
+- Change the contents of .devcontainer/devcontainer.json to those located in .devcontainer/devcontainer-base.json
+- Rebuild the container (full rebuild)
+- Follow SFTP setup instructions in `.vscode/SFTP_README.md`
+
+### 2. setup a new WP instance in Lightsail
 
 ### 3 - assign static ip and setup sftp
 
