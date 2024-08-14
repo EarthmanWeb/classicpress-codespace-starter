@@ -2,30 +2,24 @@
   "name": "Debian SERVER",
   "dockerComposeFile": "server/docker-compose.yml",
   "service": "app",
-  "forwardPorts": [8080, 8081, 3306],
+  "forwardPorts": [80, 81, 3306],
   "portsAttributes": {
     "3306": {
       "label": "Database (internal)"
     },
-    "8080": {
+    "80": {
       "label": "WordPress"
     },
-    "8081": {
+    "81": {
       "label": "phpMyAdmin"
     }
   },
-  "postStartCommand": "nohup sudo service apache2 stop && service apache2 start &",
+  "postStartCommand": "bash .devcontainer/server/start-server.sh",
   "postCreateCommand": "bash .devcontainer/server/init-server.sh",
   "mounts": ["source=bashhistory,target=/commandhistory,type=volume"],
   "remoteUser": "vscode",
   "customizations": {
     "vscode": {
-      "runArgs": [
-        "--env",
-        "XDEBUG_MODE=debug,develop",
-        "--env",
-        "XDEBUG_CONFIG=client_host=127.0.0.1 client_port=9003"
-      ],
       "settings": {
         "terminal.integrated.scrollback": 10000,
         "explorer.confirmDelete": false,
@@ -34,6 +28,7 @@
         },
         "git.enableSmartCommit": true,
         "git.confirmSync": false,
+        "php.validate.executablePath": "/usr/bin/php",
         "git.autofetch": true,
         "[yaml]": {
           "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -95,11 +90,6 @@
           "editor.insertSpaces": false,
           "editor.detectIndentation": false
         },
-        "php.validate.executablePath": "/usr/bin/php",
-        "php.validate.run": "onType",
-        "php.debug.idekey": "VSCODE",
-        "php.debug.port": 9003,
-        "php.debug.log": true,
         "[html]": {
           "editor.defaultFormatter": "vscode.html-language-features"
         },
@@ -175,8 +165,7 @@
         "satiromarra.code-sftp",
         "mblode.twig-language-2",
         "rholdos.twig-language-support",
-        "glenn2223.live-sass",
-        "felixfbecker.php-debug"
+        "glenn2223.live-sass"
       ]
     }
   }
