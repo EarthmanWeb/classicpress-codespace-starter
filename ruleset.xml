@@ -2,6 +2,13 @@
 <ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="WordPress Extra" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 	<description>Best practices beyond core WordPress Coding Standards</description>
 	<config name="WordPress-Core" value="./phpcs/vendor/wp-coding-standards/wpcs" />
+
+	<!--
+	Prevent errors caused by WordPress Coding Standards not supporting PHP 8.0+.
+	See https://github.com/WordPress/WordPress-Coding-Standards/issues/2035
+	-->
+	<ini name="error_reporting" value="E_ALL &#38; ~E_DEPRECATED" />
+
 	<rule ref="WordPress-Core"/>
 	<!-- Generic PHP best practices.
 		 https://github.com/WordPress/WordPress-Coding-Standards/pull/382 -->
