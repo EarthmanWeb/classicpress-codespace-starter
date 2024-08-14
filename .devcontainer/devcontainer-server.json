@@ -2,11 +2,7 @@
   "name": "Debian SERVER",
   "dockerComposeFile": "server/docker-compose.yml",
   "service": "app",
-  "forwardPorts": [
-    80,
-    81,
-    3306
-  ],
+  "forwardPorts": [80, 81, 3306],
   "portsAttributes": {
     "3306": {
       "label": "Database (internal)"
@@ -18,11 +14,9 @@
       "label": "phpMyAdmin"
     }
   },
+  "postStartCommand": "bash .devcontainer/server/start-server.sh",
   "postCreateCommand": "bash .devcontainer/server/init-server.sh",
-  "postStartCommand": "nohup bash -c 'service apache2 start &'",
-  "mounts": [
-    "source=bashhistory,target=/commandhistory,type=volume"
-  ],
+  "mounts": ["source=bashhistory,target=/commandhistory,type=volume"],
   "remoteUser": "vscode",
   "customizations": {
     "vscode": {
@@ -34,6 +28,7 @@
         },
         "git.enableSmartCommit": true,
         "git.confirmSync": false,
+        "php.validate.executablePath": "/usr/bin/php",
         "git.autofetch": true,
         "[yaml]": {
           "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -69,9 +64,7 @@
         "accessibility.verbosity.terminal": false,
         "accessibility.verbosity.diff-editor": false,
         "editor.inlineSuggest.enabled": true,
-        "settingsSync.ignoredExtensions": [
-          "github.copilot"
-        ],
+        "settingsSync.ignoredExtensions": ["github.copilot"],
         "github.codespaces.createCodespaceInNewWindow": true,
         "github.codespaces.showPerformanceExplorer": true,
         "files.autoSave": "off",
@@ -97,11 +90,6 @@
           "editor.insertSpaces": false,
           "editor.detectIndentation": false
         },
-        "php.validate.executablePath": "/usr/bin/php",
-        "php.validate.run": "onType",
-        "php.debug.idekey": "VSCODE",
-        "php.debug.port": 9003,
-        "php.debug.log": true,
         "[html]": {
           "editor.defaultFormatter": "vscode.html-language-features"
         },
@@ -177,8 +165,7 @@
         "satiromarra.code-sftp",
         "mblode.twig-language-2",
         "rholdos.twig-language-support",
-        "glenn2223.live-sass",
-        "felixfbecker.php-debug"
+        "glenn2223.live-sass"
       ]
     }
   }
